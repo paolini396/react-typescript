@@ -9,7 +9,7 @@ import { Header } from '../components/Header';
 
 import { Dashboard } from '../pages/Dashboard';
 // import { Profile } from '../pages/Profile';
-// import { Comic } from '../pages/Comic';
+import { ComicList } from '../pages/ComicList';
 
 export const Routes = (): JSX.Element => (
   <Switch>
@@ -17,9 +17,11 @@ export const Routes = (): JSX.Element => (
     <Route path="/signup" component={SignUp} /> */}
 
     <Header>
-      <Route path="/dashboard" component={Dashboard} isPrivate />
-      {/* <Route path="/profile" component={Profile} isPrivate />
-    <Route path="/comic" component={Comic} isPrivate /> */}
+      <>
+        <Route path="/dashboard" component={Dashboard} isPrivate />
+        <Route path="/comics" component={ComicList} isPrivate />
+        {/* <Route path="/comic" component={Comic} isPrivate /> */}
+      </>
     </Header>
   </Switch>
 );

@@ -1,9 +1,9 @@
 import { Container } from './styles';
 
-export const Dashboard = (): JSX.Element => {
+export const ComicList = (): JSX.Element => {
   return (
     <Container>
-      <h1>Dashboard</h1>
+      <h1>Lista de Comic</h1>
     </Container>
   );
 };

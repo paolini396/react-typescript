@@ -19,5 +19,11 @@ export const Container = styled.div`
     :hover {
       filter: brightness(0.9);
     }
+
+    &.selected {
+      background: var(--lightPrimaryColor);
+      color: var(--lightTextColor);
+      box-shadow: none;
+    }
   }
 `;
