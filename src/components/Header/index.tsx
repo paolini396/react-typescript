@@ -19,7 +19,7 @@ export const Header = ({ children }: HeaderProps): JSX.Element => {
   const history = useHistory();
 
   const options = [
-    { id: '/dashboard', title: 'Meus Favoritos' },
+    { id: '/favorites', title: 'Meus Favoritos' },
     { id: '/comics', title: 'Histórias em Quadrinhos' },
     { id: '/characters', title: 'Personagens' },
   ];

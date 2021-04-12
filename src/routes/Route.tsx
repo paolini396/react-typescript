@@ -29,7 +29,7 @@ export const Route: React.FC<RouteProps> = ({
         ) : (
           <Redirect
             to={{
-              pathname: isPrivate ? '/' : '/dashboard',
+              pathname: isPrivate ? '/' : '/favorites',
               state: { from: location },
             }}
           />

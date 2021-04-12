@@ -7,7 +7,7 @@ import { Header } from '../components/Header';
 // import SignIn from '../pages/SignIn';
 // import SignUp from '../pages/SignUp';
 
-import { Dashboard } from '../pages/Dashboard';
+import { FavoritesList } from '../pages/FavoritesList';
 // import { Profile } from '../pages/Profile';
 import { ComicList } from '../pages/ComicList';
 
@@ -18,7 +18,7 @@ export const Routes = (): JSX.Element => (
 
     <Header>
       <>
-        <Route path="/dashboard" component={Dashboard} isPrivate />
+        <Route path="/favorites" component={FavoritesList} isPrivate />
         <Route path="/comics" component={ComicList} isPrivate />
         {/* <Route path="/comic" component={Comic} isPrivate /> */}
       </>
